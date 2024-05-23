@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Chaninha</title>
+</head>
+<body>
+
+<h1>Seja bem vinda, princesa!!! 👸🏾</h1>
+<h2>Cuzinho hoje??? 🥰</h2>
+
+<form>
+  <label for="resposta">Digite 'S' para Sim ou 'N' para Não:</label><br>
+  <input type="text" id="resposta" name="resposta"><br><br>
+  <input type="submit" value="Enviar">
+</form>
+
+<script>
+  document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var resposta = document.getElementById("resposta").value.toLowerCase();
+    if (resposta) {
+      if (resposta === 's') {
+        document.write('Vejo você daqui a pouco, Minha Chaninha! 😎<br><br>');
+        document.write('Amo você ❤️<br><br>');
+        document.write('Amo você ❤️<br><br>');
+        document.write('Amo você ❤️<br><br>');
+        document.write('Amo você ❤️<br><br>');
+        document.write('Amo você ❤️<br><br>');
+        document.write('Amo você ❤️<br><br>');
+        document.write('Amo você ❤️<br><br>');
+      } else if (resposta === 'n') {
+        document.write("Resposta errada, meu bem! 💔😭<br><br>");
+        document.write('Por favor, atualize a página e tente novamente. 🥺<br><br>');
+      } else {
+        document.write("Resposta inválida! Por favor, digite 'S' para Sim ou 'N' para Não.<br><br>");
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
